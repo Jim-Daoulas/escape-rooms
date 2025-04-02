@@ -1,4 +1,19 @@
 .nav-tabs
 {
-    width: 15% !important;
+    display: flex;
+    flex-direction: column !important;
+    width: 15%;
+}
+
+@media only screen and (max-width: 868px) 
+{
+    .d-flex
+    {
+        flex-direction: column;
+    } 
+    .nav-tabs
+{
+    width: 100%;
+    flex-direction: row !important;
+}   
 }
