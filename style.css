@@ -1,0 +1,9 @@
+.nav-tabs
+{
+    width: 15% !important;
+}
+.d-flex
+{
+    flex-wrap: nowrap !important;
+    justify-content: space-around !important;
+}
