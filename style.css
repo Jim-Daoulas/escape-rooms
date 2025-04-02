@@ -16,4 +16,8 @@
     width: 100%;
     flex-direction: row !important;
 }   
+.list-group .d-flex
+{
+    flex-direction: row;
+}
 }
