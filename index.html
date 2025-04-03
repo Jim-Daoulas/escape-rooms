@@ -1,280 +1,338 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container mt-5">
-        <h2 class="text-center mb-4">Escape-rooms</h2>
-        <div class="d-flex justify-content-around align-items-center gap-4">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Mindtrap</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">60mim</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">Great Escape</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="counttown-tab" data-bs-toggle="tab" data-bs-target="#counttown" type="button" role="tab" aria-controls="counttown" aria-selected="false">Counttown</button>
-              </li>
-            </ul>
-            <!-- Start of Mindtrap Escape room-->
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <h3 class="mb-3">Mindtrap</h3>
-                    <div class="container">
-                        <div class="row">
-                          <div class="col">
-                          <div class="card" style="width: 20rem;">
-                        <img src="images\mindtrap/1000-and-1-nights.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">One Thousand & One Nights</h5>
-                          <p class="card-text">Uncover the magic of Akraba and fulfill your wildest dreams!</p>
-                          <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                              <i class="fa-solid fa-unlock-keyhole"></i>
-                                <p class="m-auto">70%</p>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                                <i class="fa-regular fa-user"></i>
-                                <p class="m-auto">2-6</p>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                              <i class="fa-solid fa-clock"></i>
-                                <p class="m-auto">60 min</p>
-                            </li>
-                          </ul>
-                          <a href="https://aristotelous.themindtrap.com/one-thousand-one-nights/?lang=en" class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
-                        </div>
-                      </div>
-                          </div>
-                          <div class="col">
-                          <div class="card" style="width: 20rem;">
-                        <img src="images\mindtrap/Cast-into-the-fire.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Cast into the Fire</h5>
-                          <p class="card-text">Are you ready for a world-saving adventure?</p>
-                          <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                              <i class="fa-solid fa-unlock-keyhole"></i>
-                                <p class="m-auto">85%</p>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                                <i class="fa-regular fa-user"></i>
-                                <p class="m-auto">2-6</p>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                              <i class="fa-solid fa-clock"></i>
-                                <p class="m-auto">60 min</p>
-                            </li>
-                          </ul>
-                          <a href="https://aristotelous.themindtrap.com/cast-into-the-fire/?lang=en" class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
-                        </div>
-                      </div>
-                          </div>
-                          <div class="col">
-                          <div class="card" style="width: 20rem;">
-                        <img src="images\mindtrap/shadows-of-nevermore-logo-color-aristotelous.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Shadows of Nevermore</h5>
-                          <p class="card-text">Discover what lies in the shadows of the mysterious Academy!</p>
-                          <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                              <i class="fa-solid fa-unlock-keyhole"></i>
-                                <p class="m-auto">90%</p>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                                <i class="fa-regular fa-user"></i>
-                                <p class="m-auto">2-7</p>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                              <i class="fa-solid fa-clock"></i>
-                                <p class="m-auto">60 min</p>
-                            </li>
-                          </ul>
-                          <a href="https://aristotelous.themindtrap.com/shadows-of-nevermore/?lang=en" class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
-                        </div>
-                      </div>
-                          </div>
-                        </div>
-                      </div>
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Escape-rooms</h2>
+    <div class="d-flex justify-content-around align-items-center gap-4">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
+            role="tab" aria-controls="home" aria-selected="true">Mindtrap</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button"
+            role="tab" aria-controls="profile" aria-selected="false">60mim</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button"
+            role="tab" aria-controls="contact" aria-selected="false">Great Escape</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="counttown-tab" data-bs-toggle="tab" data-bs-target="#counttown" type="button"
+            role="tab" aria-controls="counttown" aria-selected="false">Counttown</button>
+        </li>
+      </ul>
+      <!--------------------------------------- Start of Mindtrap Escape room-------------------------------------------------------->
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+          <h3 class="mb-3">Mindtrap</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 20rem;">
+                  <img src="images\mindtrap/1000-and-1-nights.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">One Thousand & One Nights</h5>
+                    <p class="card-text">Uncover the magic of Akraba and fulfill your wildest dreams!</p>
+                    <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-unlock-keyhole"></i>
+                        <p class="m-auto">70%</p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-user"></i>
+                        <p class="m-auto">2-6</p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="m-auto">60 min</p>
+                      </li>
+                    </ul>
+                    <a href="https://aristotelous.themindtrap.com/one-thousand-one-nights/?lang=en"
+                      class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
+                  </div>
                 </div>
-                <!-- End of Mindtrap Escape room-->
-                <!-- Start of 60min Escape room-->
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                    <h3 class="mb-3">60min Escape room</h3>
-                    <div class="container">
-                        <div class="row">
-                          <div class="col">
-                          <div class="card" style="width: 20rem;">
-                        <img src="images/60min/pain.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Art of pain</h5>
-                          <p class="card-text">Ταύγετος 2023 μ.Χ. Ένα εγκαταλελειμμένο σπίτι, παραδίπλα, συντρίμμια ενός ιερού χώρου, μια υπόγεια καταπακτή και εσείς...</p>
-                          <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                              <i class="fa-solid fa-unlock-keyhole"></i>
-                                <p class="m-auto">16+</p>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                                <i class="fa-regular fa-user"></i>
-                                <p class="m-auto">3-7</p>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                              <i class="fa-solid fa-clock"></i>
-                                <p class="m-auto">100 min</p>
-                            </li>
-                          </ul>
-                          <a href="https://www.60min.gr/dwmatio/art-of-pain-v2l8" class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
-                        </div>
-                      </div>
-                          </div>
-                          <div class="col">
-                          <div class="card" style="width: 20rem;">
-                        <img src="images/60min/sdfdssfdssd-3.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">ILLUMINATI</h5>
-                          <p class="card-text">Πόλη του Βατικανού , 2023 μ.Χ
-                            Πίσω από την επιφανειακή ιστορία της έδρας της Καθολικής Εκκλησίας, κρύβεται μια ιστορία που γνωρίζουν λίγοι και εκλεκτοί.</p>
-                          <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                              <i class="fa-solid fa-unlock-keyhole"></i>
-                                <p class="m-auto">85%</p>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                                <i class="fa-regular fa-user"></i>
-                                <p class="m-auto">2-5</p>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                              <i class="fa-solid fa-clock"></i>
-                                <p class="m-auto">70 min</p>
-                            </li>
-                          </ul>
-                          <a href="https://www.60min.gr/dwmatio/illuminati-35fu" class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
-                        </div>
-                      </div>
-                          </div>
-                          <div class="col">
-                          <div class="card" style="width: 20rem;">
-                        <img src="images/60min/sfaga.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">THE LOST TEMPLE</h5>
-                          <p class="card-text">Πληροφορείστε για την ύπαρξη ενός ναού ξεχασμένου από τους ανθρώπους, γεμάτο με θησαυρούς και σπουδαία μυστικά.</p>
-                          <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                              <i class="fa-solid fa-unlock-keyhole"></i>
-                                <p class="m-auto">90%</p>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                                <i class="fa-regular fa-user"></i>
-                                <p class="m-auto">3-6</p>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                              <i class="fa-solid fa-clock"></i>
-                                <p class="m-auto">75 min</p>
-                            </li>
-                          </ul>
-                          <a href="https://aristotelous.themindtrap.com/shadows-of-nevermore/?lang=en" class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
-                        </div>
-                      </div>
-                          </div>
-                        </div>
-                      </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 20rem;">
+                  <img src="images\mindtrap/Cast-into-the-fire.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Cast into the Fire</h5>
+                    <p class="card-text">Are you ready for a world-saving adventure?</p>
+                    <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-unlock-keyhole"></i>
+                        <p class="m-auto">85%</p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-user"></i>
+                        <p class="m-auto">2-6</p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="m-auto">60 min</p>
+                      </li>
+                    </ul>
+                    <a href="https://aristotelous.themindtrap.com/cast-into-the-fire/?lang=en"
+                      class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
+                  </div>
                 </div>
-                <!-- End of 60min Escape room-->
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                    <h3 class="mb-3">Great Escape room</h3>
-                    <div class="container">
-                        <div class="row">
-                          <div class="col">
-                          <div class="card" style="width: 20rem;">
-                        <img src="images/great-escape/tetragwno.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Luna Park Haunted</h5>
-                          <p class="card-text">Houston, Texas year 1925. Houston’s local Luna Park closes after police intervene due to mysterious disappearances of young children.</p>
-                          <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                              <i class="fa-solid fa-unlock-keyhole"></i>
-                                <p class="m-auto"></p>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                                <i class="fa-regular fa-user"></i>
-                                <p class="m-auto">3-6</p>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                              <i class="fa-solid fa-clock"></i>
-                                <p class="m-auto">75 min</p>
-                            </li>
-                          </ul>
-                          <a href="https://great-escape-rooms-thessaloniki.gr/en/escape-rooms/luna-park-haunted-escape-room/" class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
-                        </div>
-                      </div>
-                          </div>
-                          <div class="col">
-                          <div class="card" style="width: 20rem;">
-                        <img src="images/great-escape/25.12-remastered-square-2.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">25.12</h5>
-                          <p class="card-text">An unexpected letter brings you together after years. The reason still remains unknown as an old chapel begins to loom through the thick fog.</p>
-                          <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                              <i class="fa-solid fa-unlock-keyhole"></i>
-                                <p class="m-auto"></p>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                                <i class="fa-regular fa-user"></i>
-                                <p class="m-auto">3-6</p>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                              <i class="fa-solid fa-clock"></i>
-                                <p class="m-auto">90 min</p>
-                            </li>
-                          </ul>
-                          <a href="https://great-escape-rooms-thessaloniki.gr/en/escape-rooms/25-12-escape-room/" class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
-                        </div>
-                      </div>
-                          </div>
-                          <div class="col">
-                          <div class="card" style="width: 20rem;">
-                        <img src="images/great-escape/Ritual-0-The-Beginning-Escape-Rooms-thessaloniki.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Ritual 0 The Beginning</h5>
-                          <p class="card-text">At Great Escape Rooms, you will live the beginning of the nightmare.. Unfold the story behind the most shocking thriller of Thessaloniki!</p>
-                          <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                              <i class="fa-solid fa-unlock-keyhole"></i>
-                                <p class="m-auto"></p>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                                <i class="fa-regular fa-user"></i>
-                                <p class="m-auto">3-7</p>
-                            </li>
-                            <li class="list-group-item d-flex align-items-center gap-2">
-                              <i class="fa-solid fa-clock"></i>
-                                <p class="m-auto">120 min</p>
-                            </li>
-                          </ul>
-                          <a href="https://aristotelous.themindtrap.com/shadows-of-nevermore/?lang=en" class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
-                        </div>
-                      </div>
-                          </div>
-                        </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 20rem;">
+                  <img src="images\mindtrap/shadows-of-nevermore-logo-color-aristotelous.jpg" class="card-img-top"
+                    alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Shadows of Nevermore</h5>
+                    <p class="card-text">Discover what lies in the shadows of the mysterious Academy!</p>
+                    <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-unlock-keyhole"></i>
+                        <p class="m-auto">90%</p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-user"></i>
+                        <p class="m-auto">2-7</p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="m-auto">60 min</p>
+                      </li>
+                    </ul>
+                    <a href="https://aristotelous.themindtrap.com/shadows-of-nevermore/?lang=en"
+                      class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
+                  </div>
                 </div>
-                <div class="tab-pane fade" id="counttown" role="tabpanel" aria-labelledby="counttown-tab">
-                  <h3 class="mb-3">Contact Us</h3>
-                  <p>Get in touch with us for any inquiries or support you may need.</p>
               </div>
             </div>
+          </div>
         </div>
+        <!--------------------------------------- End of Mindtrap Escape room-------------------------------------------------------->
+        <!--------------------------------------- Start of 60min Escape room-------------------------------------------------------->
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <h3 class="mb-3">60min Escape room</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 20rem;">
+                  <img src="images/60min/pain.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Art of pain</h5>
+                    <p class="card-text">Ταύγετος 2023 μ.Χ. Ένα εγκαταλελειμμένο σπίτι, παραδίπλα, συντρίμμια ενός ιερού
+                      χώρου, μια υπόγεια καταπακτή και εσείς...</p>
+                    <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-unlock-keyhole"></i>
+                        <p class="m-auto">16+</p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-user"></i>
+                        <p class="m-auto">3-7</p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="m-auto">100 min</p>
+                      </li>
+                    </ul>
+                    <a href="https://www.60min.gr/dwmatio/art-of-pain-v2l8"
+                      class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 20rem;">
+                  <img src="images/60min/sdfdssfdssd-3.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">ILLUMINATI</h5>
+                    <p class="card-text">Πόλη του Βατικανού , 2023 μ.Χ
+                      Πίσω από την επιφανειακή ιστορία της έδρας της Καθολικής Εκκλησίας, κρύβεται μια ιστορία που
+                      γνωρίζουν λίγοι και εκλεκτοί.</p>
+                    <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-unlock-keyhole"></i>
+                        <p class="m-auto">85%</p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-user"></i>
+                        <p class="m-auto">2-5</p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="m-auto">70 min</p>
+                      </li>
+                    </ul>
+                    <a href="https://www.60min.gr/dwmatio/illuminati-35fu"
+                      class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 20rem;">
+                  <img src="images/60min/sfaga.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">THE LOST TEMPLE</h5>
+                    <p class="card-text">Πληροφορείστε για την ύπαρξη ενός ναού ξεχασμένου από τους ανθρώπους, γεμάτο με
+                      θησαυρούς και σπουδαία μυστικά.</p>
+                    <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-unlock-keyhole"></i>
+                        <p class="m-auto">90%</p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-user"></i>
+                        <p class="m-auto">3-6</p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="m-auto">75 min</p>
+                      </li>
+                    </ul>
+                    <a href="https://aristotelous.themindtrap.com/shadows-of-nevermore/?lang=en"
+                      class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--------------------------------------- End of 60min Escape room-------------------------------------------------------->
+        <!--------------------------------------- Start of Great Escape room-------------------------------------------------------->
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+          <h3 class="mb-3">Great Escape room</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 20rem;">
+                  <img src="images/great-escape/tetragwno.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Luna Park Haunted</h5>
+                    <p class="card-text">Houston, Texas year 1925. Houston’s local Luna Park closes after police
+                      intervene due to mysterious disappearances of young children.</p>
+                    <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-unlock-keyhole"></i>
+                        <p class="m-auto"></p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-user"></i>
+                        <p class="m-auto">3-6</p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="m-auto">75 min</p>
+                      </li>
+                    </ul>
+                    <a href="https://great-escape-rooms-thessaloniki.gr/en/escape-rooms/luna-park-haunted-escape-room/"
+                      class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 20rem;">
+                  <img src="images/great-escape/25.12-remastered-square-2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">25.12</h5>
+                    <p class="card-text">An unexpected letter brings you together after years. The reason still remains
+                      unknown as an old chapel begins to loom through the thick fog.</p>
+                    <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-unlock-keyhole"></i>
+                        <p class="m-auto"></p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-user"></i>
+                        <p class="m-auto">3-6</p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="m-auto">90 min</p>
+                      </li>
+                    </ul>
+                    <a href="https://great-escape-rooms-thessaloniki.gr/en/escape-rooms/25-12-escape-room/"
+                      class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 20rem;">
+                  <img src="images/great-escape/Ritual-0-The-Beginning-Escape-Rooms-thessaloniki.jpg"
+                    class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Ritual 0 The Beginning</h5>
+                    <p class="card-text">At Great Escape Rooms, you will live the beginning of the nightmare.. Unfold
+                      the story behind the most shocking thriller of Thessaloniki!</p>
+                    <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-unlock-keyhole"></i>
+                        <p class="m-auto"></p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-user"></i>
+                        <p class="m-auto">3-7</p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="m-auto">120 min</p>
+                      </li>
+                    </ul>
+                    <a href="https://great-escape-rooms-thessaloniki.gr/en/escape-rooms/ritual-0-the-beginning-escape-room/"
+                      class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 20rem;">
+              <img src="images/great-escape/The-Christmas-Chronicles-ESCAPE-ROOM.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Christmas Chronicles</h5>
+                <p class="card-text">The most beloved holiday of the year for young and old is in danger of being lost
+                  forever!</p>
+                <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
+                  <li class="list-group-item d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-unlock-keyhole"></i>
+                    <p class="m-auto"></p>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center gap-2">
+                    <i class="fa-regular fa-user"></i>
+                    <p class="m-auto">3-6</p>
+                  </li>
+                  <li class="list-group-item d-flex align-items-center gap-2">
+                    <i class="fa-solid fa-clock"></i>
+                    <p class="m-auto">70 min</p>
+                  </li>
+                </ul>
+                <a href="https://great-escape-rooms-thessaloniki.gr/en/escape-rooms/the-christmas-chronicles-escape-room/"
+                  class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-      <script src="https://kit.fontawesome.com/b27421f083.js" crossorigin="anonymous"></script>
+    <div class="tab-pane fade" id="counttown" role="tabpanel" aria-labelledby="counttown-tab">
+      <h3 class="mb-3">Contact Us</h3>
+      <p>Get in touch with us for any inquiries or support you may need.</p>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!--------------------------------------- End of Great Escape room-------------------------------------------------------->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/b27421f083.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
