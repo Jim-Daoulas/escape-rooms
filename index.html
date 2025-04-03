@@ -14,7 +14,7 @@
   <div class="container mt-5">
     <h2 class="text-center mb-4">Escape-rooms</h2>
     <div class="d-flex justify-content-around align-items-center gap-4">
-      <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <ul class="nav" id="myTab" role="tablist">
         <li class="nav-item" role="presentation">
           <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
             role="tab" aria-controls="home" aria-selected="true">Mindtrap</button>
@@ -31,7 +31,12 @@
           <button class="nav-link" id="counttown-tab" data-bs-toggle="tab" data-bs-target="#counttown" type="button"
             role="tab" aria-controls="counttown" aria-selected="false">Counttown</button>
         </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="dead-end-tab" data-bs-toggle="tab" data-bs-target="#dead-end" type="button"
+            role="tab" aria-controls="dead-end" aria-selected="false">Dead End</button>
+        </li>
       </ul>
+
       <!--------------------------------------- Start of Mindtrap Escape room-------------------------------------------------------->
       <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -291,44 +296,103 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 20rem;">
-              <img src="images/great-escape/The-Christmas-Chronicles-ESCAPE-ROOM.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">The Christmas Chronicles</h5>
-                <p class="card-text">The most beloved holiday of the year for young and old is in danger of being lost
-                  forever!</p>
-                <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
-                  <li class="list-group-item d-flex align-items-center gap-2">
-                    <i class="fa-solid fa-unlock-keyhole"></i>
-                    <p class="m-auto"></p>
-                  </li>
-                  <li class="list-group-item d-flex align-items-center gap-2">
-                    <i class="fa-regular fa-user"></i>
-                    <p class="m-auto">3-6</p>
-                  </li>
-                  <li class="list-group-item d-flex align-items-center gap-2">
-                    <i class="fa-solid fa-clock"></i>
-                    <p class="m-auto">70 min</p>
-                  </li>
-                </ul>
-                <a href="https://great-escape-rooms-thessaloniki.gr/en/escape-rooms/the-christmas-chronicles-escape-room/"
-                  class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
+            <div class="col mt-4">
+              <div class="card" style="width: 20rem;">
+                <img src="images/great-escape/The-Christmas-Chronicles-ESCAPE-ROOM.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">The Christmas Chronicles</h5>
+                  <p class="card-text">The most beloved holiday of the year for young and old is in danger of being lost
+                    forever!</p>
+                  <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
+                    <li class="list-group-item d-flex align-items-center gap-2">
+                      <i class="fa-solid fa-unlock-keyhole"></i>
+                      <p class="m-auto"></p>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center gap-2">
+                      <i class="fa-regular fa-user"></i>
+                      <p class="m-auto">3-6</p>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center gap-2">
+                      <i class="fa-solid fa-clock"></i>
+                      <p class="m-auto">70 min</p>
+                    </li>
+                  </ul>
+                  <a href="https://great-escape-rooms-thessaloniki.gr/en/escape-rooms/the-christmas-chronicles-escape-room/"
+                    class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <!--------------------------------------- End of Great Escape room-------------------------------------------------------->
+        <!--------------------------------------- Start ofCounttown Escape room-------------------------------------------------------->
+        <div class="tab-pane fade" id="counttown" role="tabpanel" aria-labelledby="counttown-tab">
+          <h3 class="mb-3">Counttown</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <div class="card" style="width: 20rem;">
+                  <img src="images/counttown/59273949_2592728410761262_18802567957970944_n.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Motel 66</h5>
+                    <p class="card-text">Ένας ιδιωτικός ερευνητής φτάνει στην Count Town με μοναδικό σκοπό να φέρει στο φως τα μυστικά της πόλης.</p>
+                    <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-unlock-keyhole"></i>
+                        <p class="m-auto"></p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-user"></i>
+                        <p class="m-auto">2-6</p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="m-auto">60 min</p>
+                      </li>
+                    </ul>
+                    <a href="https://counttown.gr/en/room/motel66/"
+                      class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 20rem;">
+                  <img src="images/counttown/BRICKMANOR.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Brick Manor</h5>
+                    <p class="card-text">Every single clue you discovered leads here at the Brick Manor.It is now time to take matters in your own hands</p>
+                    <ul class="list-group list-group-horizontal mb-3" style="height: 40px;">
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-unlock-keyhole"></i>
+                        <p class="m-auto"></p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-regular fa-user"></i>
+                        <p class="m-auto">2-6</p>
+                      </li>
+                      <li class="list-group-item d-flex align-items-center gap-2">
+                        <i class="fa-solid fa-clock"></i>
+                        <p class="m-auto">75 min</p>
+                      </li>
+                    </ul>
+                    <a href="https://counttown.gr/en/room/brick-manor-2/"
+                      class="btn btn-primary d-flex justify-content-center" target="_blank">Escape-room</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="dead-end" role="tabpanel" aria-labelledby="dead-end">
+          <h3 class="mb-3">Dead End</h3>
+          <div class="container">
+            <p>Content for Dead End escape rooms goes here...</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="tab-pane fade" id="counttown" role="tabpanel" aria-labelledby="counttown-tab">
-      <h3 class="mb-3">Contact Us</h3>
-      <p>Get in touch with us for any inquiries or support you may need.</p>
-    </div>
   </div>
-  </div>
-  </div>
-  <!--------------------------------------- End of Great Escape room-------------------------------------------------------->
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
