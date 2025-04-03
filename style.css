@@ -20,8 +20,12 @@
         width: 100%;
         flex-direction: row !important;
         position: sticky;
+        overflow-x: auto;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
         top: 0;
         z-index: 2;
+        background-color: white;
     }
 
     .list-group .d-flex {
@@ -31,12 +35,15 @@
     .row {
         gap: 15px;
     }
-    .nav 
-    {
-        overflow-x: auto;
-        overflow-y: hidden;
-        flex-wrap: nowrap;
+    .nav-item {
+        white-space: nowrap; /* Εμποδίζει το σπάσιμο των λέξεων */
     }
+    
+    .nav-link {
+        padding: 5px 10px; /* Μείωσε το padding για να μικρύνει */
+        font-size: 14px; /* Μείωσε λίγο το μέγεθος της γραμματοσειράς */
+    }
+    
       
 }
 @media only screen and (min-width: 2468px) and (max-width: 7000px)
