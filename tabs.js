@@ -19,19 +19,40 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-    document.addEventListener('DOMContentLoaded', function() {
-      // Προσθήκη event listener σε όλα τα tabs
-      const allTabs = document.querySelectorAll('[data-bs-toggle="tab"]');
-      
-      allTabs.forEach(tab => {
-        tab.addEventListener('click', function() {
-          // Κρύψιμο της αρχικής προβολής
-          document.getElementById('welcome-view').style.display = 'none';
-        });
-      });
-      
-      // Προσθήκη event listener στο dropdown button
-      document.querySelector('.dropdown-toggle').addEventListener('click', function(e) {
-        e.stopPropagation(); // Σταματάει το event από το να ενεργοποιήσει tab
+document.addEventListener('DOMContentLoaded', function() {
+    // Προσθήκη event listener σε όλα τα tabs
+    const allTabs = document.querySelectorAll('[data-bs-toggle="tab"]');
+    
+    allTabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        // Κρύψιμο της αρχικής προβολής
+        document.getElementById('welcome-view').style.display = 'none';
+        
+        // Κλείσιμο του navbar collapse σε μικρές οθόνες
+        if (window.innerWidth < 768) {
+          const navbarCollapse = document.getElementById('navbarNav');
+          const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+          if (bsCollapse) {
+            bsCollapse.hide();
+          }
+        }
       });
     });
+    
+    // Προσθήκη event listener στα dropdown items
+    document.querySelectorAll('.dropdown-item').forEach(item => {
+      item.addEventListener('click', function() {
+        // Κρύψιμο της αρχικής προβολής
+        document.getElementById('welcome-view').style.display = 'none';
+        
+        // Κλείσιμο του navbar collapse σε μικρές οθόνες
+        if (window.innerWidth < 768) {
+          const navbarCollapse = document.getElementById('navbarNav');
+          const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+          if (bsCollapse) {
+            bsCollapse.hide();
+          }
+        }
+      });
+    });
+  });

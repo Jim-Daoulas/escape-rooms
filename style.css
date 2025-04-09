@@ -1,53 +1,53 @@
-.nav {
-    display: flex;
-    flex-direction: column !important;
-    position: fixed;
-    top: 180px;
-    left: 180px;
-}
-.dropdown-menu
-{
-    min-width: 15px;
-}
-
-@media only screen and (max-width: 868px) {
-    .d-flex {
-        flex-direction: column;
-    }
-
-    .nav {
-        width: 100%;
-        flex-direction: row !important;
+/* Στυλ για το πλευρικό μενού */
+    @media (min-width: 992px) {
+      .sidebar {
         position: sticky;
-        overflow-x: auto;
-        overflow-y: hidden;
-        flex-wrap: nowrap;
-        top: 0;
-        z-index: 2;
-        background-color: white;
-    }
-
-    .list-group .d-flex {
-        flex-direction: row;
-    }
-
-    .row {
-        gap: 15px;
-    }
-    .nav-item {
-        white-space: nowrap; /* Εμποδίζει το σπάσιμο των λέξεων */
-    }
-    
-    .nav-link {
-        padding: 5px 10px; /* Μείωσε το padding για να μικρύνει */
-        font-size: 14px; /* Μείωσε λίγο το μέγεθος της γραμματοσειράς */
-    }
-    
+        top: 20px;
+        height: calc(100vh - 40px);
+        overflow-y: auto;
+      }
       
-}
-@media only screen and (min-width: 2500px) and (max-width: 7000px)
-{
-    .nav {
-        left: 400px;
+      .sidebar .nav-link {
+        padding: 0.5rem 1rem;
+        border-radius: 0.25rem;
+        margin-bottom: 0.5rem;
+        transition: all 0.3s;
+      }
+      
+      .sidebar .nav-link:hover, 
+      .sidebar .nav-link.active {
+        background-color: #f8f9fa;
+      }
+      
+      .sidebar .dropdown-menu {
+        position: relative;
+        width: 100%;
+        box-shadow: none;
+        border: none;
+        padding-left: 1rem;
+      }
+      
+      .sidebar .dropdown-item {
+        padding: 0.5rem 1rem;
+      }
     }
-}
+    
+    /* Στυλ για το hamburger menu σε μικρές οθόνες */
+    @media (max-width: 991.98px) {
+      .mobile-nav {
+        margin-bottom: 1rem;
+      }
+      
+      .navbar-collapse {
+        margin-top: 10px;
+      }
+    }
+    
+    /* Κοινά στυλ */
+    .nav-link, .dropdown-item {
+      cursor: pointer;
+    }
+    
+    .tab-content {
+      min-height: 300px;
+    }

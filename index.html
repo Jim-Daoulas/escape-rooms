@@ -52,43 +52,53 @@
       </div>
     </div>
     
-    <div class="d-flex align-items-center gap-4">
-      <ul class="nav" id="myTab" role="tablist">
-        <div class="btn-group dropend">
-          <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-            Mindtrap
-          </button>
-          <ul class="dropdown-menu">
-            <li><button class="dropdown-item" id="aristotelous-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="false">Aristotelous</button></li>
-            <li><button class="dropdown-item" id="cosmos-tab" data-bs-toggle="tab" data-bs-target="#cosmos" type="button" role="tab" aria-controls="cosmos" aria-selected="false">Cosmos</button></li>
+    <!-- Hamburger Menu Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
+      <div class="container-fluid">
+        <a class="navbar-brand d-md-none" href="#">Επιλογή Κατηγορίας</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav" id="myTab" role="tablist">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="mindtrapDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Mindtrap
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="mindtrapDropdown">
+                <li><button class="dropdown-item" id="aristotelous-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="false">Aristotelous</button></li>
+                <li><button class="dropdown-item" id="cosmos-tab" data-bs-toggle="tab" data-bs-target="#cosmos" type="button" role="tab" aria-controls="cosmos" aria-selected="false">Cosmos</button></li>
+              </ul>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="60min-tab" data-bs-toggle="tab" data-bs-target="#60mim" type="button" role="tab"
+                aria-controls="60mim" aria-selected="false">60min</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="great-escape-tab" data-bs-toggle="tab" data-bs-target="#great-escape"
+                type="button" role="tab" aria-controls="great-escape" aria-selected="false">Great Escape</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="counttown-tab" data-bs-toggle="tab" data-bs-target="#counttown" type="button"
+                role="tab" aria-controls="counttown" aria-selected="false">Counttown</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="dead-end-tab" data-bs-toggle="tab" data-bs-target="#dead-end" type="button"
+                role="tab" aria-controls="dead-end" aria-selected="false">Dead End</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="enigma-tab" data-bs-toggle="tab" data-bs-target="#enigma" type="button"
+                role="tab" aria-controls="enigma" aria-selected="false">Enigma</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="brain-game-tab" data-bs-toggle="tab" data-bs-target="#brain-game" type="button"
+                role="tab" aria-controls="brain-game" aria-selected="false">Brain Game</button>
+            </li>
           </ul>
         </div>
-        
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="60min-tab" data-bs-toggle="tab" data-bs-target="#60mim" type="button" role="tab"
-            aria-controls="60mim" aria-selected="false">60min</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="great-escape-tab" data-bs-toggle="tab" data-bs-target="#great-escape"
-            type="button" role="tab" aria-controls="great-escape" aria-selected="false">Great Escape</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="counttown-tab" data-bs-toggle="tab" data-bs-target="#counttown" type="button"
-            role="tab" aria-controls="counttown" aria-selected="false">Counttown</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="dead-end-tab" data-bs-toggle="tab" data-bs-target="#dead-end" type="button"
-            role="tab" aria-controls="dead-end" aria-selected="false">Dead End</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="enigma-tab" data-bs-toggle="tab" data-bs-target="#enigma" type="button"
-            role="tab" aria-controls="enigma" aria-selected="false">Enigma</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="brain-game-tab" data-bs-toggle="tab" data-bs-target="#brain-game" type="button"
-            role="tab" aria-controls="brain-game" aria-selected="false">Brain Game</button>
-        </li>
-      </ul>
+      </div>
+    </nav>
+
 
       <!--------------class="tab-content" id="myTabContent"------------------------- Tab Content -------------------------------------------------------->
       <div class="tab-content" id="myTabContent">
