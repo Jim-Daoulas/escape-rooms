@@ -17,3 +17,21 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+      // Προσθήκη event listener σε όλα τα tabs
+      const allTabs = document.querySelectorAll('[data-bs-toggle="tab"]');
+      
+      allTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          // Κρύψιμο της αρχικής προβολής
+          document.getElementById('welcome-view').style.display = 'none';
+        });
+      });
+      
+      // Προσθήκη event listener στο dropdown button
+      document.querySelector('.dropdown-toggle').addEventListener('click', function(e) {
+        e.stopPropagation(); // Σταματάει το event από το να ενεργοποιήσει tab
+      });
+    });
